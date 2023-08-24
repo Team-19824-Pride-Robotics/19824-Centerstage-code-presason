@@ -50,11 +50,11 @@ public final class MecanumDrive {
     public static double IN_PER_TICK = 0.000533295711;
     public static double LATERAL_IN_PER_TICK = 0.000533295711;
     public static double LATERAL_MULTIPLIER = IN_PER_TICK / LATERAL_IN_PER_TICK;
-    public static double TRACK_WIDTH_TICKS = 0;
+    public static double TRACK_WIDTH_TICKS = 54482.098946477134;
 
     // feedforward parameters in tick units
-    public static double kS = 0;
-    public static double kV = 0;
+    public static double kS = 0.8067545578309994;
+    public static double kV = 0.00010681681265584677;
     public static double kA = 0;
 
     // path profile parameters
