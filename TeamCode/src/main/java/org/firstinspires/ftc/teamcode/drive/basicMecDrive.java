@@ -34,7 +34,7 @@ public class basicMecDrive extends OpMode {
         BR = hardwareMap.get(DcMotorEx.class, "BR");
         BL = hardwareMap.get(DcMotorEx.class, "BL");
         BL.setDirection(DcMotorEx.Direction.REVERSE);
-        BR.setDirection(DcMotorEx.Direction.REVERSE);
+        FL.setDirection(DcMotorEx.Direction.REVERSE);
 
     }
 
