@@ -48,7 +48,7 @@ public class basicMecDrive extends OpMode {
         telemetry.update();
 
         double d_power = .8-.4*gamepad1.left_trigger+(.5*gamepad1.right_trigger);
-        double drive = -gamepad1.left_stick_y;
+        double drive = gamepad1.left_stick_y;
         double rotate_stick = gamepad1.right_stick_x;
         double rotate_button = 0;
 
@@ -61,28 +61,28 @@ public class basicMecDrive extends OpMode {
 
 
         if (gamepad1.dpad_up) {
-            BL.setPower(d_power);
-            FL.setPower(d_power);
-            BR.setPower(d_power);
-            FR.setPower(d_power);
+            BL.setPower(-d_power);
+            FL.setPower(-d_power);
+            BR.setPower(-d_power);
+            FR.setPower(-d_power);
         }
         else if (gamepad1.dpad_down) {
-            BL.setPower(-d_power);
-            FL.setPower(-d_power);
-            BR.setPower(-d_power);
-            FR.setPower(-d_power);
-        }
-        else if (gamepad1.dpad_left) {
             BL.setPower(d_power);
-            FL.setPower(-d_power);
-            BR.setPower(-d_power);
+            FL.setPower(d_power);
+            BR.setPower(d_power);
             FR.setPower(d_power);
         }
-        else if (gamepad1.dpad_right) {
+        else if (gamepad1.dpad_left) {
             BL.setPower(-d_power);
             FL.setPower(d_power);
             BR.setPower(d_power);
             FR.setPower(-d_power);
+        }
+        else if (gamepad1.dpad_right) {
+            BL.setPower(d_power);
+            FL.setPower(-d_power);
+            BR.setPower(-d_power);
+            FR.setPower(d_power);
         }
 
 
