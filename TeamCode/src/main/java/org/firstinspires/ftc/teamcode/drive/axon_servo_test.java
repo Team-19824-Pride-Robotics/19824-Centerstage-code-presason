@@ -30,7 +30,7 @@ public class axon_servo_test extends OpMode {
 
     @Override
     public void init() {
-        telemetry = new MultipleTelemetry(telemetry, FtcDashboard.getInstance().getTelemetry());
+            telemetry = new MultipleTelemetry(telemetry, FtcDashboard.getInstance().getTelemetry());
 
         servo = (ServoImplEx) hardwareMap.get(Servo.class, "servo1");
        // servo2 = (ServoImplEx) hardwareMap.get(Servo.class, "servo2");

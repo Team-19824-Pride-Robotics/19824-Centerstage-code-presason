@@ -55,7 +55,7 @@ public class motorTest extends OpMode {
         }
         if (gamepad1.a) {
             m1.setTargetPosition(three);
-            m1.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+                m1.setMode(DcMotor.RunMode.RUN_TO_POSITION);
             m1.setPower(power);
         }
 
